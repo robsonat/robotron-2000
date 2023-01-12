@@ -39,7 +39,6 @@ const pecas = {
 
 
 
-
 controle.forEach( (elemento) => {
     
     elemento.addEventListener("click", (event) => {
@@ -64,3 +63,9 @@ function atualizaEstatisticas(peca) {
     })
 
 }
+
+function trocarImagem (cor) {
+    document.querySelector('.robo').src="img/Robotron 2000 - "+ cor +"/Robotron 2000 - "+ cor + ".png";
+    console.log('trocou a cor para ' + cor);
+}
+
